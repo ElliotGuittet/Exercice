@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ma page web</title>
+    <script>
+        var h = document.head; // La variable h contient l'objet head du DOM
+console.log(h);
+
+        var b = document.body; // La variable b contient l'objet body du DOM
+        console.log(b);
+        // Accès au premier enfant du noeud body
+console.log(document.body.childNodes[0]);
+// Accès au deuxième enfant du noeud body
+console.log(document.body.childNodes[1]);
+// Accès au deuxième enfant du deuxième enfant du noeud body
+console.log(document.body.childNodes[1].childNodes[1]);
+// Affiche les noeuds enfant du noeud body
+        for (var i = 0; i < document.body.childNodes.length; i++) {
+            console.log(document.body.childNodes[i]);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Titre de ma page</h1>
+    <p>Je suis une page Web.</p>
+    <p>Voici un moteur de recherche de <a href="http://www.google.fr">Google</a>.</p>
+    <div id="contenu">
+        <p>Voici une liste de points :</p>
+        <ul class="pointsClass" id="pointsId">
+            <li class="point" id="point1">Point 1</li>
+            <li class="point" id="point2">Point 2</li>
+            <Li class="point" id="point3">Point 3</Li>
+        </ul>
+    </div>
+    <button id="bouton">Cliquez-moi !</button>
+</body>
+
+</html>
